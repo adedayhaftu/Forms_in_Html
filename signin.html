@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>       
+        body{
+            width: 500px;
+            height: 600px;
+            padding: 40px;
+            border: 1px solid;
+            box-shadow: #d4d3d3 4px 4px 4px 4px, -4px -4px 4px 4px rgb(228, 225, 225);
+            border-color: #cecaca;
+            margin: 100px  auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input{
+            width: 95%;  
+            height: 50%; 
+            margin: 0 auto;
+            padding: 10px;
+
+        }
+        #submit_button{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            padding: 12px 8px;
+            border: none;
+            width: 100%;
+            height: 50%;
+        }
+        .signup-lines{
+        position:relative;
+        margin: 50px auto;
+        text-align: center;
+        }
+        .signup-lines:before{
+        content:" ";
+        display: block;
+        height: 2px;
+        width: 170px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        background: rgb(160, 159, 159);
+        }
+       .signup-lines:after{
+        content:" ";
+        display: block;
+        height: 2px;
+        width: 170px;
+        position: absolute;
+        top: 50%;
+        left:65%;
+        right: 9%;
+        background: rgb(160, 159, 159);
+        }
+        .icons{
+
+            width:85px;
+            height:80px;
+            color: black;
+            justify-content: center;
+            margin: 0 215px;
+            display: flex; gap: 80px;
+            filter: grayscale(100%);
+        }
+        .small-font {
+            font-size: 14px; 
+        }
+    </style>
+
+</head>
+<body>
+    Don't have account ? <a href="index.html" style="color: black; text-decoration: none;"><b>Sign up</b></a>
+    <h1 style="font-size: 40px;">Sign In</h1>
+    <form action="table.html" method="get">
+        <label for"email">Email:</label>
+        <br><br>
+        <input type="email" id="email" placeholder="Enter your email"/>
+        <br><br>
+        <label for"password">Password</label>
+        <br><br>
+        <input type="password" id="password" placeholder="Enter your password"/>
+        <br><br>
+        <input style="width: 15px;  height: 15px;" type="checkbox" id="checkbox" name="remember">
+        <label for="checkbox" class="small-font">I've Read And Agree With <b>The Terms Of Service</b> And Our <b>Privacy Policy</b></label>
+        <br><br><br><br>
+        <button type="submit" id="submit_button">Sign In</button>
+        <br><br>
+        <p class="signup-lines"> Or Sign In With</p>
+        <br>
+        <div class="icons" >
+            <div class="google">
+            <a href="https://accounts.google.com/lifecycle/steps/signup/name?continue=https://mail.google.com/mail/&ddm=1&dsh=S788654786:1740472539287548&ec=asw-gmail-hero-create&flowEntry=SignUp&flowName=GlifWebSignIn&service=mail&theme=glif&TL=ADgdZ7Qjjhd90v48bKXO-1mbDmYam96OF6RjaM25_gpKMvOyjFAMhLgiUBjtN8wb">
+                <i class="fa-brands fa-google" style="font-size:20px";> </i>
+            </a>
+            </div>
+            <div class="facebook" >
+            <a href="https://www.facebook.com/v18.0/dialog/oauth?client_id=YOUR_FACEBOOK_APP_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=token&scope=email,public_profile">
+                <i class="fa-brands fa-facebook" style="font-size:20px";> </i>
+            </a>
+        </div>
+    </form>
+</body>
+</html>
